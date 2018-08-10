@@ -144,6 +144,16 @@ alias ci
 options head
   console.info(${0:TARGET})
 
+snippet console-time
+alias cti
+options head
+  console.time(${0:#:label})
+
+snippet console-timeend
+alias cte
+options head
+  console.timeEnd(${0:#:label})
+
 snippet iife
 options head
   (function (${1}) {
