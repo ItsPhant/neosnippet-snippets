@@ -1,97 +1,98 @@
-snippet :f
-options head
+snippet     :f
+options     head
   ${1:#:method_name}: function (${2:#:attribute}) {
     ${0:TARGET}
   }
 
-snippet function
-abbr    func
-options word
+snippet     function
+alias       func
+abbr        function func (args) { ... }
+options     word
   function ${1:#:function_name} (${2:#:argument}) {
     ${0:TARGET}
   }
 
-snippet function2
-abbr    func2
-options head
+snippet     function2
+alias       func2
+abbr        function func (args) { ... }
+options     head
   function ${1:function_name} (${2:argument}) {
     ${0:TARGET}
   }
 
-snippet proto
-options head
+snippet     proto
+options     head
   ${1:#:class_name}.prototype.${2:#:method_name} = function (${3:#:first_argument}) {
     ${0:TARGET}
   }
 
-
-snippet f
-options word
+snippet     f
+options     word
   function (${1}) { ${0:TARGET} }
 
-snippet if
-options head
+snippet     if
+options     head
   if (${1:true}) {
     ${0:TARGET}
   }
 
-snippet if-else
-abbr ife
-options head
+snippet     if-else
+abbr        ife
+options     head
   if (${1:#:condition}) {
     ${2:TARGET}
   } else {
     ${3}
   }
 
-snippet for
-options head
+snippet     for
+options     head
   for (let ${1:i} = 0; $1 < ${2:#:Things}; ++$1) {
     ${0:TARGET}
   }
 
-snippet forlength
-options head
+snippet     forlength
+options     head
   for (let ${1:i} = 0; $1 < ${2:#:Things}.length; ++$1) {
     ${0:TARGET}
   }
 
-snippet forin
-options head
+snippet     forin
+options     head
   for (const ${1:i} in ${2:#:Things}) {
     ${0:TARGET}
   }
 
-snippet while
-options head
+snippet     while
+options     head
   while (${1:true}) {
     ${0:TARGET}
   }
 
-snippet switch
-options head
+snippet     switch
+options     head
   switch (${1:#:var}) {
     case ${2:#:val}:
       ${0:TARGET}
       break
   }
 
-snippet case
-options head
+snippet     case
+options     head
 	case ${1:value}:
 	  ${0:TARGET}
 	  break
 
-snippet try
-options head
+snippet     try
+options     head
   try {
     ${1:TARGET}
   } catch (${2:e}) {
     ${3}
   }
 
-snippet try_finally
-options head
+snippet     try_finally
+options     head
   try {
     ${1:TARGET}
   } catch (${2:e}) {
@@ -100,73 +101,73 @@ options head
     ${4}
   }
 
-
-snippet key-value
-abbr :,
-options word
+snippet     key-value
+alias       kv
+abbr        :,
+options     word
   ${1:#:value_name}: ${0:#:value},
 
 #snippet key
 #options word
 #  ${1:#:key}: "${2:#:value}"}${3:, }
 
-snippet setTimeout-function
-options head
+snippet     setTimeout-function
+options     head
   setTimeout(function () { ${0} }, ${1:10});
 
-snippet debugger
-alias db
-options head
+snippet     debugger
+alias       db
+options     head
   debugger
 
-snippet console-log
-alias cl
-options head
+snippet     console-log
+alias       cl
+options     head
   console.log(${0:TARGET})
 
-snippet console-trace
-alias ct
-options head
+snippet     console-trace
+alias       ct
+options     head
   console.trace()
 
-snippet console-error
-alias ce
-options head
+snippet     console-error
+alias       ce
+options     head
   console.error(${0:TARGET})
 
-snippet console-warn
-alias cw
-options head
+snippet     console-warn
+alias       cw
+options     head
   console.warn(${0:TARGET})
 
-snippet console-info
-alias ci
-options head
+snippet     console-info
+alias       ci
+options     head
   console.info(${0:TARGET})
 
-snippet console-time
-alias cti
-options head
+snippet     console-time
+alias       cti
+options     head
   console.time(${0:#:label})
 
-snippet console-timeend
-alias cte
-options head
+snippet     console-timeend
+alias       cte
+options     head
   console.timeEnd(${0:#:label})
 
-snippet iife
-options head
+snippet     iife
+options     head
   (function (${1}) {
     'use strict'
     ${0:TARGET}
   })(${2})
 
-snippet js
-options head
+snippet     js
+options     head
   JSON.stringify(${1:TARGET}, null, 2)
 
-snippet jsc
-options head
+snippet     jsc
+options     head
   console.log(JSON.stringify(${1:TARGET}, null, 2))
 
 snippet     class
