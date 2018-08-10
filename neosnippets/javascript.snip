@@ -46,6 +46,12 @@ options head
 
 snippet for
 options head
+  for (let ${1:i} = 0; $1 < ${2:#:Things}; ++$1) {
+    ${0:TARGET}
+  }
+
+snippet forlength
+options head
   for (let ${1:i} = 0; $1 < ${2:#:Things}.length; ++$1) {
     ${0:TARGET}
   }
