@@ -246,7 +246,7 @@ alias       bef
 options     head
   before(function () {
     ${0:TARGET}
-  }
+  })
 
 snippet     beforeEach
 abbr        beforeEach(function () { ... })
@@ -262,7 +262,7 @@ alias       af
 options     head
   after(function () {
     ${0:TARGET}
-  }
+  })
 
 snippet     afterEach
 abbr        afterEach(function () { ... })
@@ -270,7 +270,7 @@ alias       aea
 options     head
   afterEach(function () {
     ${0:TARGET}
-  }
+  })
 
 snippet     describe
 abbr        describe(string, function () { ... })
@@ -278,14 +278,14 @@ alias       des
 options     head
   describe('${1:#:description}', function () {
     ${0:TARGET}
-  }
+  })
 
 snippet     it
 abbr        it(string, function () { ... })
 options     head
   it('${1:#:description}', function () {
     ${0:TARGET}
-  }
+  })
 
 # license snippets
 
